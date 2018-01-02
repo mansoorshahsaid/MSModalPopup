@@ -36,7 +36,8 @@ class ViewController: UIViewController {
     
     @objc func openPopUp(){
         // MARK: need to set the default modal animation to false
-        self.present(PopUpVC(), animated: false, completion: nil)
+        let popUpVC = PopUpVC(titleModal: "Title", displayCloseButton: true)
+        self.present(popUpVC, animated: false, completion: nil)
     }
     
     func setupViews(){
